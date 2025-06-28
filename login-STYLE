@@ -1,84 +1,106 @@
-
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
-      background-size: cover;
-      background-position: center;
-      transition: background-image 0.5s ease-in-out;
+* {
+      box-sizing: border-box;
     }
 
-    .content {
-      position: relative;
-      z-index: 1;
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #f857a6, #ff5858);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      font-family: Arial, sans-serif;
     }
 
-    .login-box {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(10px);
+    .container {
+      background: linear-gradient(135deg, #f857a6, #ff5858);
+      padding: 50px 40px;
       border-radius: 20px;
-      padding: 40px 30px;
-      width: 300px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      width: 320px;
       text-align: center;
-      color: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
-    .login-box .avatar {
+    .avatar {
       width: 80px;
       height: 80px;
       border-radius: 50%;
+      background: #fff;
       overflow: hidden;
       margin: 0 auto 20px;
-      border: 2px solid #fff;
     }
 
-    .login-box .avatar img {
+    .avatar img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .login-box input {
+    .form-container input {
       width: 100%;
-      padding: 10px 15px;
+      padding: 12px 20px;
       margin: 10px 0;
       border: none;
-      border-radius: 20px;
+      border-radius: 30px;
       outline: none;
     }
 
-    .login-box button {
+    .form-container button {
       width: 100%;
       padding: 12px;
-      background: #007bff;
       border: none;
-      border-radius: 20px;
+      border-radius: 30px;
+      background: #5b2cff;
       color: #fff;
       font-size: 16px;
       cursor: pointer;
       margin-top: 10px;
     }
 
-    .login-box button:hover {
-      background: #0056b3;
+    .form-container button:hover {
+      background: #3e1acc;
     }
 
-    .login-box a {
-      display: block;
-      margin-top: 10px;
+    .google-btn {
+      background: #fff;
+      color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .google-btn img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .toggle {
       color: #fff;
+      margin-top: 20px;
       font-size: 14px;
-      text-decoration: none;
     }
 
-    .login-box a:hover {
+    .toggle a {
+      color: #fff;
       text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .forgot {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      color: #fff;
+      text-decoration: underline;
+      margin: 5px 0 15px;
+      cursor: pointer;
     }
   
